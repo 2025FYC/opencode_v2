@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  opencode:
+    build: .
+    ports:
+      - "4096:4096"
+    volumes:
+      # Mount opencode-auth to ~/.local/share/opencode for auth access
+      - /home/jojo/opencode-sandbox_vol/opencode-auth:/root/.local/share/opencode
+      # Mount public/a9x4b2 to workdir
+      - /home/jojo/opencode-sandbox_vol/public/a9x4b2:/workdir/public
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

@@ -1,0 +1,447 @@
+INFO  2025-09-24T17:31:31 +198ms service=default version=dev args=[] opencode
+INFO  2025-09-24T17:31:31 +1ms service=project directory=/workdir fromDirectory
+INFO  2025-09-24T17:31:31 +13ms service=config path=/root/.config/opencode/config.json loading
+INFO  2025-09-24T17:31:31 +0ms service=config path=/root/.config/opencode/opencode.json loading
+INFO  2025-09-24T17:31:31 +1ms service=config path=/root/.config/opencode/opencode.jsonc loading
+INFO  2025-09-24T17:31:31 +10ms service=plugin path=opencode-copilot-auth@0.0.2 loading plugin
+INFO  2025-09-24T17:31:31 +2ms service=plugin path=opencode-anthropic-auth@0.0.2 loading plugin
+INFO  2025-09-24T17:31:31 +22ms service=bus type=* subscribing
+INFO  2025-09-24T17:31:31 +0ms service=bus type=session.updated subscribing
+INFO  2025-09-24T17:31:31 +0ms service=bus type=message.updated subscribing
+INFO  2025-09-24T17:31:31 +0ms service=bus type=message.part.updated subscribing
+INFO  2025-09-24T17:31:31 +0ms service=format init
+INFO  2025-09-24T17:31:31 +0ms service=bus type=file.edited subscribing
+INFO  2025-09-24T17:31:31 +3ms service=lsp serverIds=typescript, vue, eslint, gopls, ruby-lsp, pyright, elixir-ls, zls, csharp, rust, clangd, svelte, jdtls enabled LSP servers
+INFO  2025-09-24T17:31:31 +1ms service=models.dev file={} refreshing
+INFO  2025-09-24T17:31:31 +5ms service=provider init
+INFO  2025-09-24T17:31:31 +5ms service=provider providerID=opencode found
+INFO  2025-09-24T17:31:31 +70ms service=default cmd=["/root/.cache/opencode/tui/tui-pf448ehe."] tui
+INFO  2025-09-24T17:31:31 +216ms service=server method=GET path=/project/current request
+INFO  2025-09-24T17:31:31 +2ms service=server duration=2 response
+INFO  2025-09-24T17:31:31 +1ms service=server method=GET path=/path request
+INFO  2025-09-24T17:31:31 +0ms service=server duration=0 response
+INFO  2025-09-24T17:31:31 +0ms service=server method=GET path=/agent request
+INFO  2025-09-24T17:31:31 +1ms service=server duration=1 response
+INFO  2025-09-24T17:31:31 +42ms service=server method=GET path=/config request
+INFO  2025-09-24T17:31:31 +0ms service=server duration=0 response
+DEBUG 2025-09-24T17:31:31 +2ms service=tui TUI launched
+DEBUG 2025-09-24T17:31:31 +1ms service=tui file=/root/.local/state/opencode/tui State saved to file
+WARN  2025-09-24T17:31:31 +0ms service=tui No clipboard utility found on system. Copy/paste functionality will be disabled. See https://opencode.ai/docs/troubleshooting/ for more information.
+ERROR 2025-09-24T17:31:31 +1ms service=tui error=clipboard unavailable: No clipboard utility found. Install one of the following:
+
+For X11 systems:
+	apt install -y xclip
+	# or
+	apt install -y xsel
+
+For Wayland systems:
+	apt install -y wl-clipboard
+
+If running in a headless environment, you may also need:
+	apt install -y xvfb
+	# and run:
+	Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+	export DISPLAY=:99.0 Failed to initialize clipboard
+INFO  2025-09-24T17:31:31 +5ms service=server method=GET path=/command request
+INFO  2025-09-24T17:31:31 +1ms service=server duration=1 response
+DEBUG 2025-09-24T17:31:31 +0ms service=tui config={"$schema":"","agent":{"build":{"description":"","disable":false,"mode":"","model":"","permission":{"edit":"","webfetch":""},"prompt":"","temperature":0,"tools":{},"top_p":0},"general":{"description":"","disable":false,"mode":"","model":"","permission":{"edit":"","webfetch":""},"prompt":"","temperature":0,"tools":{},"top_p":0},"plan":{"description":"","disable":false,"mode":"","model":"","permission":{"edit":"","webfetch":""},"prompt":"","temperature":0,"tools":{},"top_p":0}},"autoshare":false,"autoupdate":false,"command":{},"disabled_providers":[],"experimental":{"disable_paste_summary":false,"hook":{"file_edited":{},"session_completed":[]}},"formatter":{},"instructions":[],"keybinds":{"agent_cycle":"","agent_cycle_reverse":"","agent_list":"","app_exit":"","app_help":"","editor_open":"","file_close":"","file_diff_toggle":"","file_list":"","file_search":"","input_clear":"","input_newline":"","input_paste":"","input_submit":"","leader":"ctrl+x","messages_copy":"","messages_first":"","messages_half_page_down":"","messages_half_page_up":"","messages_last":"","messages_layout_toggle":"","messages_next":"","messages_page_down":"","messages_page_up":"","messages_previous":"","messages_redo":"","messages_revert":"","messages_undo":"","model_cycle_recent":"","model_cycle_recent_reverse":"","model_list":"","project_init":"","session_child_cycle":"","session_child_cycle_reverse":"","session_compact":"","session_export":"","session_interrupt":"","session_list":"","session_new":"","session_share":"","session_timeline":"","session_unshare":"","switch_agent":"","switch_agent_reverse":"","switch_mode":"","switch_mode_reverse":"","theme_list":"","thinking_blocks":"","tool_details":""},"layout":"","lsp":{},"mcp":{},"mode":{"build":{"description":"","disable":false,"mode":"","model":"","permission":{"edit":"","webfetch":""},"prompt":"","temperature":0,"tools":{},"top_p":0},"plan":{"description":"","disable":false,"mode":"","model":"","permission":{"edit":"","webfetch":""},"prompt":"","temperature":0,"tools":{},"top_p":0}},"model":"","permission":{"edit":"","webfetch":""},"plugin":[],"provider":{},"share":"","small_model":"","snapshot":false,"theme":"","tools":{},"tui":{"scroll_speed":0},"username":"unknown","watcher":{"ignore":[]}} Loaded config
+INFO  2025-09-24T17:31:31 +0ms service=server method=GET path=/file/status request
+INFO  2025-09-24T17:31:31 +1ms service=server duration=1 response
+INFO  2025-09-24T17:31:31 +1ms service=tui commands={"agent_cycle":{},"agent_cycle_reverse":{},"agent_list":{},"app_exit":{},"app_help":{},"editor_open":{},"input_clear":{},"input_newline":{},"input_paste":{},"input_submit":{},"messages_copy":{},"messages_first":{},"messages_half_page_down":{},"messages_half_page_up":{},"messages_last":{},"messages_page_down":{},"messages_page_up":{},"messages_redo":{},"messages_undo":{},"model_cycle_recent":{},"model_cycle_recent_reverse":{},"model_list":{},"project_init":{},"session_child_cycle":{},"session_child_cycle_reverse":{},"session_compact":{},"session_export":{},"session_interrupt":{},"session_list":{},"session_new":{},"session_share":{},"session_timeline":{},"session_unshare":{},"theme_list":{},"thinking_blocks":{},"tool_details":{}} Loaded commands
+INFO  2025-09-24T17:31:31 +1ms service=server method=GET path=/tui/control/next request
+INFO  2025-09-24T17:31:31 +1ms service=server method=GET path=/event request
+INFO  2025-09-24T17:31:31 +0ms service=server event connected
+INFO  2025-09-24T17:31:31 +3ms service=bus type=* subscribing
+INFO  2025-09-24T17:31:31 +2ms service=server duration=5 response
+INFO  2025-09-24T17:31:31 +1ms service=server method=GET path=/config/providers request
+INFO  2025-09-24T17:31:31 +1ms service=server duration=1 response
+DEBUG 2025-09-24T17:31:31 +3ms service=tui model=grok-code provider=opencode Selected model from fallback (first available)
+DEBUG 2025-09-24T17:31:31 +2ms service=tui timeTakenMs=0 messages.renderView
+DEBUG 2025-09-24T17:31:31 +53ms service=tui file=/root/.local/state/opencode/tui State saved to file
+DEBUG 2025-09-24T17:31:31 +174ms service=tui color=#181818 isDark=true Background color
+DEBUG 2025-09-24T17:31:31 +6ms service=tui file=/root/.local/state/opencode/tui State saved to file
+DEBUG 2025-09-24T17:31:31 +1ms service=tui timeTakenMs=0 messages.renderView
+INFO  2025-09-24T17:31:42 +10204ms service=server method=GET path=/config/providers request
+INFO  2025-09-24T17:31:42 +1ms service=server duration=1 response
+DEBUG 2025-09-24T17:31:51 +9633ms service=tui file=/root/.local/state/opencode/tui State saved to file
+INFO  2025-09-24T17:31:51 +1ms service=server method=POST path=/session request
+INFO  2025-09-24T17:31:51 +1ms service=session id=ses_68337e996ffe4idn5SNzJxiyIJ version=dev projectID=global directory=/workdir title=New session - 2025-09-24T17:31:51.785Z time={"created":1758735111785,"updated":1758735111785} created
+INFO  2025-09-24T17:31:51 +1ms service=bus type=session.updated publishing
+INFO  2025-09-24T17:31:51 +1ms service=server duration=3 response
+INFO  2025-09-24T17:31:51 +28ms service=server method=POST path=/session/ses_68337e996ffe4idn5SNzJxiyIJ/message request
+INFO  2025-09-24T17:31:51 +5ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ prompt
+DEBUG 2025-09-24T17:31:51 +0ms service=tui timeTakenMs=0 messages.renderView
+INFO  2025-09-24T17:31:51 +5ms service=bus type=message.updated publishing
+INFO  2025-09-24T17:31:51 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:51 +1ms service=bus type=session.updated publishing
+INFO  2025-09-24T17:31:51 +1ms service=provider providerID=opencode modelID=grok-code getModel
+INFO  2025-09-24T17:31:51 +1ms service=provider status=started providerID=opencode getSDK
+DEBUG 2025-09-24T17:31:51 +0ms service=tui timeTakenMs=0 messages.renderView
+INFO  2025-09-24T17:31:51 +0ms service=bun pkg=@ai-sdk/openai-compatible version=latest installing package using Bun's default registry resolution
+INFO  2025-09-24T17:31:51 +0ms service=bun cmd=["/usr/local/bin/opencode","add","--force","--exact","--cwd","/root/.cache/opencode","@ai-sdk/openai-compatible@latest"] cwd=/root/.cache/opencode running
+DEBUG 2025-09-24T17:31:51 +7ms service=tui message=msg_97cc8166c001Kjv4gNkgxSnYdt part=prt_97cc8166c002U5z1NIJkUETooF message part updated
+DEBUG 2025-09-24T17:31:51 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:51 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:51 +3ms service=tui timeTakenMs=0 messages.renderView
+DEBUG 2025-09-24T17:31:51 +1ms service=tui timeTakenMs=0 messages.renderView
+INFO  2025-09-24T17:31:52 +753ms service=bun code=0 stdout=bun add v1.2.22 (6bafe260)
+
++ opencode-anthropic-auth@0.0.2
++ opencode-copilot-auth@0.0.2
+
+installed @ai-sdk/openai-compatible@1.0.18
+
+21 packages installed [758.00ms]
+ stderr=Resolving dependencies
+Resolved, downloaded and extracted [27]
+Saved lockfile
+ done
+INFO  2025-09-24T17:31:52 +90ms service=provider status=completed duration=855 providerID=opencode getSDK
+INFO  2025-09-24T17:31:52 +1ms service=provider providerID=opencode modelID=grok-code found
+INFO  2025-09-24T17:31:52 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ sessionID=ses_68337e996ffe4idn5SNzJxiyIJ locking
+INFO  2025-09-24T17:31:52 +11ms service=bus type=message.updated publishing
+INFO  2025-09-24T17:31:52 +7ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ process
+INFO  2025-09-24T17:31:52 +6ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=start part
+DEBUG 2025-09-24T17:31:52 +12ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:52 +90ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:52 +91ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:52 +91ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +91ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +90ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +91ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +90ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +90ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +24ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=start-step part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-start part
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cfe001S0EBibgsTp5Gsl message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +2ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +3ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +30ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +4ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +19ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +3ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +5ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +9ms service=tui timeTakenMs=2 messages.renderView
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +2ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +4ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +5ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +1ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +8ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +4ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +2ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +5ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +4ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+INFO  2025-09-24T17:31:53 +2ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=2 messages.renderView
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +10ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +23ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +2ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +2ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:53 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +10ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:53 +2ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:53 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:53 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +3ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:53 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:53 +4ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +6ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +91ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +91ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:53 +91ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +91ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:54 +53ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:54 +1ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:54 +2ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +33ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +91ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +91ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:54 +28ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:54 +1ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:54 +2ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +59ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +92ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +92ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:54 +43ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:54 +3ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +41ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:54 +38ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-start part
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +3ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:54 +30ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +3ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:54 +10ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:54 +17ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +6ms service=tui timeTakenMs=2 messages.renderView
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +1ms service=tui pending render, skipping
+INFO  2025-09-24T17:31:54 +1ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-delta part
+INFO  2025-09-24T17:31:54 +1ms service=bus type=message.part.updated publishing
+DEBUG 2025-09-24T17:31:54 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +21ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +4ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +2ms service=tui timeTakenMs=1 messages.renderView
+INFO  2025-09-24T17:31:54 +16ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=reasoning-end part
+INFO  2025-09-24T17:31:54 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=text-end part
+INFO  2025-09-24T17:31:54 +1ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=finish-step part
+INFO  2025-09-24T17:31:54 +2ms service=bus type=message.part.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ type=finish part
+INFO  2025-09-24T17:31:54 +0ms service=bus type=message.updated publishing
+INFO  2025-09-24T17:31:54 +1ms service=bus type=message.updated publishing
+INFO  2025-09-24T17:31:54 +1ms service=bus type=message.updated publishing
+INFO  2025-09-24T17:31:54 +0ms service=session.compaction pruning
+INFO  2025-09-24T17:31:54 +0ms service=session.prompt session=ses_68337e996ffe4idn5SNzJxiyIJ sessionID=ses_68337e996ffe4idn5SNzJxiyIJ unlocking
+INFO  2025-09-24T17:31:54 +1ms service=server duration=3073 response
+INFO  2025-09-24T17:31:54 +0ms service=bus type=session.idle publishing
+DEBUG 2025-09-24T17:31:54 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc81cff001rcikdNadR24Ugd message part updated
+DEBUG 2025-09-24T17:31:54 +1ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82201001xhQ2D5syDCxJke message part updated
+DEBUG 2025-09-24T17:31:54 +1ms service=tui pending render, skipping
+INFO  2025-09-24T17:31:54 +0ms service=session.compaction pruned=0 total=0 found
+DEBUG 2025-09-24T17:31:54 +0ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +0ms service=tui message=msg_97cc819f8001Ymw0KEfNV8vR51 part=prt_97cc82284001MlwtliXHiWpCKB message part updated
+DEBUG 2025-09-24T17:31:54 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +5ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +1ms service=tui timeTakenMs=1 messages.renderView
+DEBUG 2025-09-24T17:31:54 +0ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +6ms service=tui timeTakenMs=0 messages.renderView
+DEBUG 2025-09-24T17:31:54 +21ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +1ms service=tui timeTakenMs=0 messages.renderView
+DEBUG 2025-09-24T17:31:54 +1ms service=tui pending render, skipping
+DEBUG 2025-09-24T17:31:54 +2ms service=tui timeTakenMs=0 messages.renderView
+INFO  2025-09-24T17:31:56 +1229ms service=tui offset=0 x=39 y=18 mouse
+INFO  2025-09-24T17:31:56 +0ms service=tui end=-1,-1 start=39,18 mouse selection
+DEBUG 2025-09-24T17:31:56 +1ms service=tui timeTakenMs=0 messages.renderView
+DEBUG 2025-09-24T17:31:56 +86ms service=tui timeTakenMs=0 messages.renderView
+INFO  2025-09-24T17:31:57 +1580ms service=bus type=* unsubscribing
+INFO  2025-09-24T17:31:57 +0ms service=server event disconnected
+INFO  2025-09-24T17:31:59 +1957ms service=bus type=session.updated publishing
