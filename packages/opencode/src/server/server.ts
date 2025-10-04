@@ -20,6 +20,7 @@ import { Permission } from "../permission"
 import { Instance } from "../project/instance"
 import { Agent } from "../agent/agent"
 import { Auth } from "../auth"
+import { JWT } from "../auth/jwt"
 import { Command } from "../command"
 import { Global } from "../global"
 import { ProjectRoute } from "./project"
@@ -30,6 +31,7 @@ import { SessionCompaction } from "../session/compaction"
 import { SessionRevert } from "../session/revert"
 import { lazy } from "../util/lazy"
 import { InstanceBootstrap } from "../project/bootstrap"
+import { HTTPException } from "hono/http-exception"
 
 const ERRORS = {
   400: {
@@ -43,6 +45,22 @@ const ERRORS = {
             })
             .meta({
               ref: "Error",
+            }),
+        ),
+      },
+    },
+  },
+  401: {
+    description: "Unauthorized - Invalid or missing JWT token",
+    content: {
+      "application/json": {
+        schema: resolver(
+          z
+            .object({
+              message: z.string(),
+            })
+            .meta({
+              ref: "UnauthorizedError",
             }),
         ),
       },
@@ -64,6 +82,15 @@ export namespace Server {
         log.error("failed", {
           error: err,
         })
+        // Handle HTTPException (包括 JWT 401 錯誤)
+        if (err instanceof HTTPException) {
+          return c.json(
+            {
+              message: err.message,
+            },
+            err.status as any,
+          )
+        }
         if (err instanceof NamedError) {
           return c.json(err.toObject(), {
             status: 400,
@@ -100,6 +127,24 @@ export namespace Server {
         })
       })
       .use(cors())
+      // JWT Authentication Middleware
+      // 排除 public endpoints
+      .use(async (c, next) => {
+        const publicPaths = [
+          "/doc",           // OpenAPI 文件
+          "/health",        // Health check (如果有的話)
+        ]
+
+        // 檢查是否為 public endpoint
+        const isPublic = publicPaths.some((path) => c.req.path === path || c.req.path.startsWith(path))
+
+        if (isPublic) {
+          return next()
+        }
+
+        // 其他所有 endpoints 都需要 JWT 驗證
+        return JWT.middleware()(c, next)
+      })
       .get(
         "/doc",
         openAPIRouteHandler(app, {
